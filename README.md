@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # AngularAppSample
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.5.
@@ -25,3 +26,6 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+=======
+# angular-crud-sample
+>>>>>>> 7eda3d3178209c8944af0d45bed6bae2e15c94bd
