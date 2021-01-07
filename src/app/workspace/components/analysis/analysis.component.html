@@ -1,0 +1,12 @@
+<div *ngIf="ready" class="row">
+    <div class="card text-white mb-3 margin-left-right-18 width-100">
+        <div class="card-body">
+            <div class="chart-wrapper">
+                <canvas baseChart [datasets]="barChartData" [labels]="barChartLabels" [options]="barChartOptions"
+                    [plugins]="barChartPlugins" [legend]="barChartLegend" [chartType]="barChartType"
+                    style="position: relative; height:40vh; width:80vw">
+                </canvas>
+            </div>
+        </div>
+    </div>
+</div>

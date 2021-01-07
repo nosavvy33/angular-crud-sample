@@ -1,0 +1,85 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; font-size: 1.5rem; }
+.mat-header-cell {
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .mat-cell {
+    text-align: center;
+    justify-content:center;
+  }
+table.mat-table
+{
+    max-width: 100%; 
+    width: 100%;
+    
+    th{
+        width: 20%;
+        margin-left: 18px;
+    }
+    
+    tr 
+    {
+        td:first-child {
+            max-width: 5vw;
+        width: 5vw;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin-left: 18px;
+
+        }
+    }
+    
+    th:first-child & tr > td:first-child {
+        max-width: 5vw;
+        width: 5vw;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    
+    td, th{
+        text-align: center
+    }
+}
+
+.custom-card-group {
+    width: 100%;
+    align-items: center;
+    padding-left: 35%;
+    padding-right: 35%;
+    text-align: center;
+}
+
+.width-100{
+    width: 100%;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.pad-bot-5vh{
+    padding-bottom: 5vh;
+}
+
+.margin-left-right-18 { 
+    margin-left: 18%; 
+    margin-right: 18%; 
+}
+
+.relative-top-15 { 
+    position: relative; 
+    top: 15vh; 
+}
+
+.footer {
+    margin-top: 8px;
+    font-size: 0.8em;
+}
+
+div.form { margin-top: 12px; }

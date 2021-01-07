@@ -1,0 +1,37 @@
+<div class="container" style="height: 30vh">
+    <div style="height: 5vh">
+        <strong>
+            <p mat-dialog-title>Añadir cliente</p>
+        </strong>
+    </div>
+    <div style="height: 20vh;">
+        <form ngForm #formControl class="mat-dialog-content">
+
+            <div class="form">
+                <input type="text" class="form-control" [(ngModel)]="newClient.nombres" placeholder="Nombres"
+                    name="nombres" />
+            </div>
+
+            <div class="form">
+                <input type="text" class="form-control" [(ngModel)]="newClient.apellidos" placeholder="Apellidos"
+                    name="apellidos" />
+
+            </div>
+
+            <div class="form">
+                <input type="date" class="form-control" [(ngModel)]="newClient.nacimiento" placeholder="Nacimiento"
+                    name="nacimiento" />
+            </div>
+
+            <div mat-dialog-actions>
+                <div class="footer-button-wrapper">
+                    <button mat-button-raised mat-dialog-close class="btn btn-success"
+                        [disabled]="!newClient.nacimiento || !newClient.nombres || !newClient.apellidos"
+                        (click)="confirmAdd(); formControl.reset();" color="success">Save</button>
+                    <button mat-button-raised (click)="onNoClick(); formControl.reset();" class="btn btn-default"
+                        tabindex="-1">Cancel</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
